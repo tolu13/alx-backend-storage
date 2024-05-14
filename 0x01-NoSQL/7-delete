@@ -1,0 +1,4 @@
+// deletes school collectn by matching string
+db.school.deleteMany(
+    { name: "Holberton school" }
+)
