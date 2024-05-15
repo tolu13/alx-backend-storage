@@ -27,7 +27,7 @@ class Cache:
         store data in Redis with a randomly generated key
 
         """
-        key = str(uuid.uuid4())
+        key = str(uuid4())
         self._redis.set(key, data)
         return key
 
